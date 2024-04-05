@@ -50,7 +50,7 @@ const MMSDK = new MetaMaskSDK(
     infuraAPIKey: process.env.INFURA_API_KEY,
     // Other options
 );
-
+await MMSDK.init();
 // You can also access via window.ethereum
 const ethereum = MMSDK.getProvider();
 ```
@@ -91,7 +91,7 @@ const MMSDK = new MetaMaskSDK(
     infuraAPIKey: process.env.INFURA_API_KEY,
     // Other options
 );
-
+await MMSDK.init();
 // You can also access via window.ethereum
 const ethereum = MMSDK.getProvider();
 
